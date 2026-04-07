@@ -1,0 +1,66 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+}
+
+.todo-item__label {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-item__checkbox {
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 0.35rem;
+  accent-color: #2563eb;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+}
+
+.todo-item__checkbox:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.25);
+  outline-offset: 2px;
+}
+
+.todo-item__text {
+  margin: 0;
+  font-size: 1rem;
+  color: #0f172a;
+  word-break: break-word;
+}
+
+.todo-item__text--completed {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.todo-item__delete {
+  border: none;
+  background: #ef4444;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.6rem 0.95rem;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.todo-item__delete:hover,
+.todo-item__delete:focus-visible {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+.todo-item__delete:focus-visible {
+  outline: 3px solid rgba(239, 68, 68, 0.25);
+  outline-offset: 2px;
+}
